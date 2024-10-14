@@ -1,0 +1,38 @@
+services:
+  postgres:
+    container_name: postgres
+    image: postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      PGDATA: /data/postgres
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - "5431:5432"
+    networks:
+      - postgres
+    restart: unless-stopped
+
+  maildev:
+    image: maildev/maildev
+    restart: always
+    environment:
+      - TZ=Africa/Accra
+      - MAILDEV_WEB_PORT=1080
+      - MAILDEV_SMTP_PORT=1025
+    ports:
+      - "8080:1080"
+      - "8025:1025"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+networks:
+  postgres:
+    driver: bridge
+
+
+volumes:
+  postgres:
