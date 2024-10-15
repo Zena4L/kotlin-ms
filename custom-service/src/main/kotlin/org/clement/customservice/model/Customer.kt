@@ -1,11 +1,6 @@
 package org.clement.customservice.model
 
-import jakarta.persistence.Column
-import jakarta.persistence.Entity
-import jakarta.persistence.GeneratedValue
-import jakarta.persistence.GenerationType
-import jakarta.persistence.Id
-import jakarta.persistence.Table
+import jakarta.persistence.*
 
 @Entity
 @Table(name = "customers")
@@ -26,5 +21,10 @@ class Customer(
 
     var address: String? = null,
 
-    var sex : String? = null
+    @Enumerated(EnumType.ORDINAL)
+    var gender: Gender? = null
 )
+
+enum class Gender {
+    MALE, FEMALE
+}
