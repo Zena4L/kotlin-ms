@@ -1,5 +1,6 @@
 package org.clement.customservice.controller
 
+import jakarta.validation.Valid
 import org.clement.customservice.dto.CreateCustomRequest
 import org.clement.customservice.model.Customer
 import org.clement.customservice.service.CustomerService
@@ -16,7 +17,7 @@ class CustomerController(private val customerService: CustomerService) {
 
     @PostMapping("/")
     @ResponseStatus(HttpStatus.CREATED)
-    fun createCustomer(@RequestBody request: CreateCustomRequest): Customer {
+    fun createCustomer(@Valid @RequestBody request: CreateCustomRequest): Customer {
         return customerService.createCustomer(request)
     }
 }

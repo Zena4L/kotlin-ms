@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
 @Service
-@Transactional(readOnly = true)
+@Transactional
 class CustomerServiceImp(private val repository: CustomRepository) : CustomerService {
     override fun createCustomer(request: CreateCustomRequest): Customer {
         val customer: Customer = Customer(

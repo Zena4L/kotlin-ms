@@ -13,10 +13,6 @@ spring:
         format_sql: true
     show-sql: true
 
-
-
-
-
 server:
   port: 8090
 
