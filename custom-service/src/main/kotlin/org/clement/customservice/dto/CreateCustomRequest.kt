@@ -22,11 +22,11 @@ data class CreateCustomRequest(
     @field:Email(message = EMAIL )
     val email: String,
 
-    val phone : String?,
+    val phone : String? = null,
 
-    val address : String?,
+    val address : String? = null,
 
-    val gender : Gender?
+    val gender : Gender? = null
     ) {
 
 }
