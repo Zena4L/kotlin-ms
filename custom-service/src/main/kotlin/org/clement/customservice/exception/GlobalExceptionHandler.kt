@@ -36,10 +36,17 @@ class GlobalExceptionHandler: ResponseEntityExceptionHandler() {
         return exceptionBuilder(errors,HttpStatus.BAD_REQUEST)
     }
 
+    @ExceptionHandler(CustomerNotFoundException::class)
+    fun handle404NotFoundException(ex: CustomerNotFoundException) : ResponseEntity<Any>{
+        return exceptionBuilder(ex.message ?: "Resource not found",HttpStatus.NOT_FOUND)
+    }
+
 
     private fun exceptionBuilder(errors: String, status: HttpStatus): ResponseEntity<Any> {
-        val problemDetail: ProblemDetail = ProblemDetail.forStatus(status)
-        problemDetail.detail = errors
+        val problemDetail: ProblemDetail = ProblemDetail.forStatus(status).apply {
+            this.detail = errors
+            this.title = status.reasonPhrase
+        }
         return ResponseEntity(problemDetail,status)
     }
 
