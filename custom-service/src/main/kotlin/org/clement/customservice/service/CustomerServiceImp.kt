@@ -10,12 +10,13 @@ import org.clement.customservice.utils.ValidationMessages.UPDATE_SUCC
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.PageRequest
 import org.springframework.data.domain.Pageable
+import org.springframework.kafka.core.KafkaTemplate
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
 @Service
 @Transactional
-class CustomerServiceImp(private val repository: CustomRepository) :
+class CustomerServiceImp(private val repository: CustomRepository,private val template: KafkaTemplate<String,Customer>) :
     CustomerService {
     override fun createCustomer(request: CreateCustomRequest): Customer {
         val customer: Customer = Customer(
@@ -26,6 +27,8 @@ class CustomerServiceImp(private val repository: CustomRepository) :
             address = request.address,
             gender = request.gender
         )
+
+        template.send("customerCreated",customer)
 
         return repository.save(customer)
     }
