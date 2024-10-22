@@ -1,0 +1,588 @@
+2024-10-22T11:57:09.900Z  INFO 26868 --- [custom-service] [main] o.c.c.CustomServiceApplicationKt         : Starting CustomServiceApplicationKt using Java 21.0.1 with PID 26868 (C:\Users\ClementOwireku-Bogya\OneDrive - AmaliTech gGmbH\Desktop\kotlin-ms\custom-service\target\classes started by ClementOwireku-Bogya in C:\Users\ClementOwireku-Bogya\OneDrive - AmaliTech gGmbH\Desktop\kotlin-ms)
+2024-10-22T11:57:09.902Z  INFO 26868 --- [custom-service] [main] o.c.c.CustomServiceApplicationKt         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T11:57:09.953Z  INFO 26868 --- [custom-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-10-22T11:57:09.955Z  INFO 26868 --- [custom-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=custom-service, profiles=[default], label=null, version=null, state=null
+2024-10-22T11:57:11.127Z  INFO 26868 --- [custom-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T11:57:11.257Z  INFO 26868 --- [custom-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 1 JPA repository interface.
+2024-10-22T11:57:11.541Z  INFO 26868 --- [custom-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5a61f7b3-ae18-365c-8ffd-43363b974fd7
+2024-10-22T11:57:11.839Z  WARN 26868 --- [custom-service] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-22T11:57:11.842Z  WARN 26868 --- [custom-service] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-10-22T11:57:12.099Z  INFO 26868 --- [custom-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2024-10-22T11:57:12.113Z  INFO 26868 --- [custom-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T11:57:12.113Z  INFO 26868 --- [custom-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T11:57:12.245Z  INFO 26868 --- [custom-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T11:57:12.246Z  INFO 26868 --- [custom-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2289 ms
+2024-10-22T11:57:12.606Z  INFO 26868 --- [custom-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T11:57:12.774Z  INFO 26868 --- [custom-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58c80957
+2024-10-22T11:57:12.776Z  INFO 26868 --- [custom-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T11:57:12.972Z  INFO 26868 --- [custom-service] [main] liquibase.database                       : Set default schema name to public
+2024-10-22T11:57:13.376Z  INFO 26868 --- [custom-service] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-10-22T11:57:13.420Z  INFO 26868 --- [custom-service] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-10-22T11:57:13.423Z  INFO 26868 --- [custom-service] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-10-22T11:57:13.434Z  INFO 26868 --- [custom-service] [main] liquibase.util                           : UPDATE SUMMARY
+2024-10-22T11:57:13.434Z  INFO 26868 --- [custom-service] [main] liquibase.util                           : Run:                          0
+2024-10-22T11:57:13.434Z  INFO 26868 --- [custom-service] [main] liquibase.util                           : Previously run:               5
+2024-10-22T11:57:13.434Z  INFO 26868 --- [custom-service] [main] liquibase.util                           : Filtered out:                 0
+2024-10-22T11:57:13.434Z  INFO 26868 --- [custom-service] [main] liquibase.util                           : -------------------------------
+2024-10-22T11:57:13.434Z  INFO 26868 --- [custom-service] [main] liquibase.util                           : Total change sets:            5
+2024-10-22T11:57:13.435Z  INFO 26868 --- [custom-service] [main] liquibase.util                           : Update summary generated
+2024-10-22T11:57:13.471Z  INFO 26868 --- [custom-service] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-10-22T11:57:13.473Z  INFO 26868 --- [custom-service] [main] liquibase.command                        : Command execution complete
+2024-10-22T11:57:13.586Z  INFO 26868 --- [custom-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T11:57:13.672Z  INFO 26868 --- [custom-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T11:57:13.716Z  INFO 26868 --- [custom-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T11:57:14.045Z  INFO 26868 --- [custom-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T11:57:14.957Z  INFO 26868 --- [custom-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T11:57:14.987Z  INFO 26868 --- [custom-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T11:57:16.179Z  WARN 26868 --- [custom-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T11:57:17.381Z  INFO 26868 --- [custom-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-10-22T11:57:17.452Z  WARN 26868 --- [custom-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-10-22T11:57:17.463Z  INFO 26868 --- [custom-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoints beneath base path '/actuator'
+2024-10-22T11:57:17.633Z  INFO 26868 --- [custom-service] [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9093]
+	client.dns.lookup = use_all_dns_ips
+	client.id = custom-service-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-10-22T11:57:17.717Z  INFO 26868 --- [custom-service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-10-22T11:57:17.717Z  INFO 26868 --- [custom-service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-10-22T11:57:17.717Z  INFO 26868 --- [custom-service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1729598237716
+2024-10-22T11:57:18.265Z  INFO 26868 --- [custom-service] [kafka-admin-client-thread | custom-service-admin-0] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for custom-service-admin-0 unregistered
+2024-10-22T11:57:18.272Z  INFO 26868 --- [custom-service] [kafka-admin-client-thread | custom-service-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-10-22T11:57:18.272Z  INFO 26868 --- [custom-service] [kafka-admin-client-thread | custom-service-admin-0] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-10-22T11:57:18.272Z  INFO 26868 --- [custom-service] [kafka-admin-client-thread | custom-service-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-10-22T11:57:18.292Z  INFO 26868 --- [custom-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-10-22T11:57:18.320Z  INFO 26868 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-10-22T11:57:18.325Z  INFO 26868 --- [custom-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-10-22T11:57:18.335Z  INFO 26868 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-10-22T11:57:18.336Z  INFO 26868 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-10-22T11:57:18.336Z  INFO 26868 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-10-22T11:57:18.336Z  INFO 26868 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-10-22T11:57:18.336Z  INFO 26868 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-10-22T11:57:18.336Z  INFO 26868 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-10-22T11:57:18.336Z  INFO 26868 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-10-22T11:57:18.663Z  INFO 26868 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-10-22T11:57:18.665Z  INFO 26868 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-10-22T11:57:18.667Z  INFO 26868 --- [custom-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-10-22T11:57:18.668Z  INFO 26868 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1729598238668 with initial instances count: 1
+2024-10-22T11:57:18.674Z  INFO 26868 --- [custom-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSTOM-SERVICE with eureka with status UP
+2024-10-22T11:57:18.675Z  INFO 26868 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1729598238675, current=UP, previous=STARTING]
+2024-10-22T11:57:18.678Z  INFO 26868 --- [custom-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOM-SERVICE/AMALITECH-PC-10663.mshome.net:custom-service:8090: registering service...
+2024-10-22T11:57:18.690Z  INFO 26868 --- [custom-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2024-10-22T11:57:18.691Z  INFO 26868 --- [custom-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8090
+2024-10-22T11:57:18.723Z  INFO 26868 --- [custom-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOM-SERVICE/AMALITECH-PC-10663.mshome.net:custom-service:8090 - registration status: 204
+2024-10-22T11:57:18.728Z  INFO 26868 --- [custom-service] [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9093]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-groundId-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = groundId
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2024-10-22T11:57:18.772Z  INFO 26868 --- [custom-service] [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-10-22T11:57:18.827Z  INFO 26868 --- [custom-service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-10-22T11:57:18.827Z  INFO 26868 --- [custom-service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-10-22T11:57:18.827Z  INFO 26868 --- [custom-service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1729598238827
+2024-10-22T11:57:18.830Z  INFO 26868 --- [custom-service] [main] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Subscribed to topic(s): customerCreated
+2024-10-22T11:57:18.855Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-groundId-1, groupId=groundId] Cluster ID: ylg_XF5SRuuSvPJ8KrWijg
+2024-10-22T11:57:18.856Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Discovered group coordinator 127.0.0.1:9093 (id: 2147482646 rack: null)
+2024-10-22T11:57:18.857Z  INFO 26868 --- [custom-service] [main] o.c.c.CustomServiceApplicationKt         : Started CustomServiceApplicationKt in 10.309 seconds (process running for 11.181)
+2024-10-22T11:57:18.859Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] (Re-)joining group
+2024-10-22T11:57:18.876Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Request joining group due to: need to re-join with the given member-id: consumer-groundId-1-c24cd0ab-1d90-475b-9210-c2e1aae70fc6
+2024-10-22T11:57:18.876Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] (Re-)joining group
+2024-10-22T11:57:18.880Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Successfully joined group with generation Generation{generationId=51, memberId='consumer-groundId-1-c24cd0ab-1d90-475b-9210-c2e1aae70fc6', protocol='range'}
+2024-10-22T11:57:18.887Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Finished assignment for group at generation 51: {consumer-groundId-1-c24cd0ab-1d90-475b-9210-c2e1aae70fc6=Assignment(partitions=[customerCreated-0, customerCreated-1, customerCreated-2, customerCreated-3, customerCreated-4, customerCreated-5, customerCreated-6, customerCreated-7, customerCreated-8, customerCreated-9])}
+2024-10-22T11:57:18.895Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Successfully synced group in generation Generation{generationId=51, memberId='consumer-groundId-1-c24cd0ab-1d90-475b-9210-c2e1aae70fc6', protocol='range'}
+2024-10-22T11:57:18.895Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Notifying assignor about the new Assignment(partitions=[customerCreated-0, customerCreated-1, customerCreated-2, customerCreated-3, customerCreated-4, customerCreated-5, customerCreated-6, customerCreated-7, customerCreated-8, customerCreated-9])
+2024-10-22T11:57:18.898Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-groundId-1, groupId=groundId] Adding newly assigned partitions: customerCreated-0, customerCreated-1, customerCreated-2, customerCreated-3, customerCreated-4, customerCreated-5, customerCreated-6, customerCreated-7, customerCreated-8, customerCreated-9
+2024-10-22T11:57:18.912Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-2 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:57:18.914Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-3 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:57:18.914Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:57:18.914Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-1 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:57:18.914Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-6 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:57:18.914Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-7 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:57:18.914Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-4 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:57:18.915Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-5 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:57:18.915Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-8 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:57:18.915Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-9 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:57:18.916Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : groundId: partitions assigned: [customerCreated-0, customerCreated-1, customerCreated-2, customerCreated-3, customerCreated-4, customerCreated-5, customerCreated-6, customerCreated-7, customerCreated-8, customerCreated-9]
+2024-10-22T11:57:19.021Z  INFO 26868 --- [custom-service] [RMI TCP Connection(2)-172.27.32.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T11:57:19.022Z  INFO 26868 --- [custom-service] [RMI TCP Connection(2)-172.27.32.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T11:57:19.025Z  INFO 26868 --- [custom-service] [RMI TCP Connection(2)-172.27.32.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-10-22T11:58:11.173Z  INFO 26868 --- [custom-service] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CUSTOM-SERVICE with eureka with status DOWN
+2024-10-22T11:58:11.173Z  INFO 26868 --- [custom-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1729598291173, current=DOWN, previous=UP]
+2024-10-22T11:58:11.173Z  INFO 26868 --- [custom-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOM-SERVICE/AMALITECH-PC-10663.mshome.net:custom-service:8090: registering service...
+2024-10-22T11:58:11.177Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-groundId-1, groupId=groundId] Revoke previously assigned partitions customerCreated-0, customerCreated-1, customerCreated-2, customerCreated-3, customerCreated-4, customerCreated-5, customerCreated-6, customerCreated-7, customerCreated-8, customerCreated-9
+2024-10-22T11:58:11.177Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : groundId: partitions revoked: [customerCreated-0, customerCreated-1, customerCreated-2, customerCreated-3, customerCreated-4, customerCreated-5, customerCreated-6, customerCreated-7, customerCreated-8, customerCreated-9]
+2024-10-22T11:58:11.178Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Member consumer-groundId-1-c24cd0ab-1d90-475b-9210-c2e1aae70fc6 sending LeaveGroup request to coordinator 127.0.0.1:9093 (id: 2147482646 rack: null) due to the consumer unsubscribed from all topics
+2024-10-22T11:58:11.178Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-10-22T11:58:11.179Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Request joining group due to: consumer pro-actively leaving the group
+2024-10-22T11:58:11.179Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Unsubscribed all topics or patterns and assigned partitions
+2024-10-22T11:58:11.180Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-10-22T11:58:11.180Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Request joining group due to: consumer pro-actively leaving the group
+2024-10-22T11:58:11.193Z  INFO 26868 --- [custom-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOM-SERVICE/AMALITECH-PC-10663.mshome.net:custom-service:8090 - registration status: 204
+2024-10-22T11:58:11.341Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-10-22T11:58:11.342Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-10-22T11:58:11.342Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-10-22T11:58:11.342Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-10-22T11:58:11.350Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-groundId-1 unregistered
+2024-10-22T11:58:11.351Z  INFO 26868 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : groundId: Consumer stopped
+2024-10-22T11:58:11.362Z  INFO 26868 --- [custom-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T11:58:11.364Z  INFO 26868 --- [custom-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T11:58:11.371Z  INFO 26868 --- [custom-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T11:58:11.372Z  INFO 26868 --- [custom-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-10-22T11:58:14.375Z  INFO 26868 --- [custom-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-10-22T11:58:14.394Z  INFO 26868 --- [custom-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOM-SERVICE/AMALITECH-PC-10663.mshome.net:custom-service:8090 - deregister  status: 200
+2024-10-22T11:58:14.395Z  INFO 26868 --- [custom-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-10-22T11:58:21.121Z  INFO 32676 --- [custom-service] [main] o.c.c.CustomServiceApplicationKt         : Starting CustomServiceApplicationKt using Java 21.0.1 with PID 32676 (C:\Users\ClementOwireku-Bogya\OneDrive - AmaliTech gGmbH\Desktop\kotlin-ms\custom-service\target\classes started by ClementOwireku-Bogya in C:\Users\ClementOwireku-Bogya\OneDrive - AmaliTech gGmbH\Desktop\kotlin-ms)
+2024-10-22T11:58:21.123Z  INFO 32676 --- [custom-service] [main] o.c.c.CustomServiceApplicationKt         : No active profile set, falling back to 1 default profile: "default"
+2024-10-22T11:58:21.175Z  INFO 32676 --- [custom-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-10-22T11:58:21.175Z  INFO 32676 --- [custom-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=custom-service, profiles=[default], label=null, version=null, state=null
+2024-10-22T11:58:22.530Z  INFO 32676 --- [custom-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T11:58:22.677Z  INFO 32676 --- [custom-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 1 JPA repository interface.
+2024-10-22T11:58:23.041Z  INFO 32676 --- [custom-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5a61f7b3-ae18-365c-8ffd-43363b974fd7
+2024-10-22T11:58:23.438Z  WARN 32676 --- [custom-service] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-10-22T11:58:23.441Z  WARN 32676 --- [custom-service] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-10-22T11:58:23.713Z  INFO 32676 --- [custom-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2024-10-22T11:58:23.728Z  INFO 32676 --- [custom-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-22T11:58:23.744Z  INFO 32676 --- [custom-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-22T11:58:23.882Z  INFO 32676 --- [custom-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-22T11:58:23.883Z  INFO 32676 --- [custom-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2705 ms
+2024-10-22T11:58:24.323Z  INFO 32676 --- [custom-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-22T11:58:24.505Z  INFO 32676 --- [custom-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7a6e0f3c
+2024-10-22T11:58:24.507Z  INFO 32676 --- [custom-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-22T11:58:24.685Z  INFO 32676 --- [custom-service] [main] liquibase.database                       : Set default schema name to public
+2024-10-22T11:58:25.084Z  INFO 32676 --- [custom-service] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-10-22T11:58:25.154Z  INFO 32676 --- [custom-service] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-10-22T11:58:25.158Z  INFO 32676 --- [custom-service] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-10-22T11:58:25.171Z  INFO 32676 --- [custom-service] [main] liquibase.util                           : UPDATE SUMMARY
+2024-10-22T11:58:25.172Z  INFO 32676 --- [custom-service] [main] liquibase.util                           : Run:                          0
+2024-10-22T11:58:25.172Z  INFO 32676 --- [custom-service] [main] liquibase.util                           : Previously run:               5
+2024-10-22T11:58:25.172Z  INFO 32676 --- [custom-service] [main] liquibase.util                           : Filtered out:                 0
+2024-10-22T11:58:25.172Z  INFO 32676 --- [custom-service] [main] liquibase.util                           : -------------------------------
+2024-10-22T11:58:25.173Z  INFO 32676 --- [custom-service] [main] liquibase.util                           : Total change sets:            5
+2024-10-22T11:58:25.174Z  INFO 32676 --- [custom-service] [main] liquibase.util                           : Update summary generated
+2024-10-22T11:58:25.216Z  INFO 32676 --- [custom-service] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-10-22T11:58:25.219Z  INFO 32676 --- [custom-service] [main] liquibase.command                        : Command execution complete
+2024-10-22T11:58:25.399Z  INFO 32676 --- [custom-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T11:58:25.509Z  INFO 32676 --- [custom-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T11:58:25.561Z  INFO 32676 --- [custom-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T11:58:25.926Z  INFO 32676 --- [custom-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T11:58:26.947Z  INFO 32676 --- [custom-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-22T11:58:26.979Z  INFO 32676 --- [custom-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T11:58:28.018Z  WARN 32676 --- [custom-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-22T11:58:29.680Z  INFO 32676 --- [custom-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-10-22T11:58:29.768Z  WARN 32676 --- [custom-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-10-22T11:58:29.784Z  INFO 32676 --- [custom-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoints beneath base path '/actuator'
+2024-10-22T11:58:30.012Z  INFO 32676 --- [custom-service] [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9093]
+	client.dns.lookup = use_all_dns_ips
+	client.id = custom-service-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-10-22T11:58:30.121Z  INFO 32676 --- [custom-service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-10-22T11:58:30.121Z  INFO 32676 --- [custom-service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-10-22T11:58:30.121Z  INFO 32676 --- [custom-service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1729598310119
+2024-10-22T11:58:30.592Z  INFO 32676 --- [custom-service] [kafka-admin-client-thread | custom-service-admin-0] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for custom-service-admin-0 unregistered
+2024-10-22T11:58:30.598Z  INFO 32676 --- [custom-service] [kafka-admin-client-thread | custom-service-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-10-22T11:58:30.598Z  INFO 32676 --- [custom-service] [kafka-admin-client-thread | custom-service-admin-0] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-10-22T11:58:30.598Z  INFO 32676 --- [custom-service] [kafka-admin-client-thread | custom-service-admin-0] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-10-22T11:58:30.620Z  INFO 32676 --- [custom-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-10-22T11:58:30.651Z  INFO 32676 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-10-22T11:58:30.656Z  INFO 32676 --- [custom-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-10-22T11:58:30.667Z  INFO 32676 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-10-22T11:58:30.667Z  INFO 32676 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-10-22T11:58:30.667Z  INFO 32676 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-10-22T11:58:30.667Z  INFO 32676 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-10-22T11:58:30.667Z  INFO 32676 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-10-22T11:58:30.667Z  INFO 32676 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-10-22T11:58:30.667Z  INFO 32676 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-10-22T11:58:30.985Z  INFO 32676 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-10-22T11:58:30.987Z  INFO 32676 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-10-22T11:58:30.989Z  INFO 32676 --- [custom-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-10-22T11:58:30.991Z  INFO 32676 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1729598310990 with initial instances count: 1
+2024-10-22T11:58:30.997Z  INFO 32676 --- [custom-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSTOM-SERVICE with eureka with status UP
+2024-10-22T11:58:30.998Z  INFO 32676 --- [custom-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1729598310998, current=UP, previous=STARTING]
+2024-10-22T11:58:31.000Z  INFO 32676 --- [custom-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOM-SERVICE/AMALITECH-PC-10663.mshome.net:custom-service:8090: registering service...
+2024-10-22T11:58:31.012Z  INFO 32676 --- [custom-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2024-10-22T11:58:31.013Z  INFO 32676 --- [custom-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8090
+2024-10-22T11:58:31.046Z  INFO 32676 --- [custom-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOM-SERVICE/AMALITECH-PC-10663.mshome.net:custom-service:8090 - registration status: 204
+2024-10-22T11:58:31.051Z  INFO 32676 --- [custom-service] [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9093]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-groundId-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = groundId
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2024-10-22T11:58:31.094Z  INFO 32676 --- [custom-service] [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-10-22T11:58:31.147Z  INFO 32676 --- [custom-service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-10-22T11:58:31.148Z  INFO 32676 --- [custom-service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-10-22T11:58:31.148Z  INFO 32676 --- [custom-service] [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1729598311147
+2024-10-22T11:58:31.150Z  INFO 32676 --- [custom-service] [main] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Subscribed to topic(s): customerCreated
+2024-10-22T11:58:31.175Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-groundId-1, groupId=groundId] Cluster ID: ylg_XF5SRuuSvPJ8KrWijg
+2024-10-22T11:58:31.176Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Discovered group coordinator 127.0.0.1:9093 (id: 2147482646 rack: null)
+2024-10-22T11:58:31.179Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] (Re-)joining group
+2024-10-22T11:58:31.179Z  INFO 32676 --- [custom-service] [main] o.c.c.CustomServiceApplicationKt         : Started CustomServiceApplicationKt in 11.362 seconds (process running for 12.11)
+2024-10-22T11:58:31.195Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Request joining group due to: need to re-join with the given member-id: consumer-groundId-1-6af004e3-98c0-4aac-9d78-3bd1fc6717c0
+2024-10-22T11:58:31.195Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] (Re-)joining group
+2024-10-22T11:58:31.200Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Successfully joined group with generation Generation{generationId=53, memberId='consumer-groundId-1-6af004e3-98c0-4aac-9d78-3bd1fc6717c0', protocol='range'}
+2024-10-22T11:58:31.208Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Finished assignment for group at generation 53: {consumer-groundId-1-6af004e3-98c0-4aac-9d78-3bd1fc6717c0=Assignment(partitions=[customerCreated-0, customerCreated-1, customerCreated-2, customerCreated-3, customerCreated-4, customerCreated-5, customerCreated-6, customerCreated-7, customerCreated-8, customerCreated-9])}
+2024-10-22T11:58:31.215Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Successfully synced group in generation Generation{generationId=53, memberId='consumer-groundId-1-6af004e3-98c0-4aac-9d78-3bd1fc6717c0', protocol='range'}
+2024-10-22T11:58:31.215Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Notifying assignor about the new Assignment(partitions=[customerCreated-0, customerCreated-1, customerCreated-2, customerCreated-3, customerCreated-4, customerCreated-5, customerCreated-6, customerCreated-7, customerCreated-8, customerCreated-9])
+2024-10-22T11:58:31.219Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-groundId-1, groupId=groundId] Adding newly assigned partitions: customerCreated-0, customerCreated-1, customerCreated-2, customerCreated-3, customerCreated-4, customerCreated-5, customerCreated-6, customerCreated-7, customerCreated-8, customerCreated-9
+2024-10-22T11:58:31.231Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-2 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:58:31.231Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-3 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:58:31.232Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:58:31.232Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-1 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:58:31.232Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-6 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:58:31.232Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-7 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:58:31.232Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-4 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:58:31.233Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-5 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:58:31.233Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-8 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:58:31.233Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition customerCreated-9 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[127.0.0.1:9093 (id: 1001 rack: null)], epoch=0}}
+2024-10-22T11:58:31.234Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : groundId: partitions assigned: [customerCreated-0, customerCreated-1, customerCreated-2, customerCreated-3, customerCreated-4, customerCreated-5, customerCreated-6, customerCreated-7, customerCreated-8, customerCreated-9]
+2024-10-22T11:58:31.415Z  INFO 32676 --- [custom-service] [RMI TCP Connection(2)-172.27.32.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-22T11:58:31.415Z  INFO 32676 --- [custom-service] [RMI TCP Connection(2)-172.27.32.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-22T11:58:31.419Z  INFO 32676 --- [custom-service] [RMI TCP Connection(2)-172.27.32.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-10-22T12:00:02.319Z  INFO 32676 --- [custom-service] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CUSTOM-SERVICE with eureka with status DOWN
+2024-10-22T12:00:02.320Z  INFO 32676 --- [custom-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1729598402320, current=DOWN, previous=UP]
+2024-10-22T12:00:02.320Z  INFO 32676 --- [custom-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOM-SERVICE/AMALITECH-PC-10663.mshome.net:custom-service:8090: registering service...
+2024-10-22T12:00:02.324Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-groundId-1, groupId=groundId] Revoke previously assigned partitions customerCreated-0, customerCreated-1, customerCreated-2, customerCreated-3, customerCreated-4, customerCreated-5, customerCreated-6, customerCreated-7, customerCreated-8, customerCreated-9
+2024-10-22T12:00:02.324Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : groundId: partitions revoked: [customerCreated-0, customerCreated-1, customerCreated-2, customerCreated-3, customerCreated-4, customerCreated-5, customerCreated-6, customerCreated-7, customerCreated-8, customerCreated-9]
+2024-10-22T12:00:02.324Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Member consumer-groundId-1-6af004e3-98c0-4aac-9d78-3bd1fc6717c0 sending LeaveGroup request to coordinator 127.0.0.1:9093 (id: 2147482646 rack: null) due to the consumer unsubscribed from all topics
+2024-10-22T12:00:02.324Z  INFO 32676 --- [custom-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOM-SERVICE/AMALITECH-PC-10663.mshome.net:custom-service:8090 - registration status: 204
+2024-10-22T12:00:02.325Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-10-22T12:00:02.325Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Request joining group due to: consumer pro-actively leaving the group
+2024-10-22T12:00:02.325Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Unsubscribed all topics or patterns and assigned partitions
+2024-10-22T12:00:02.326Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-10-22T12:00:02.326Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-groundId-1, groupId=groundId] Request joining group due to: consumer pro-actively leaving the group
+2024-10-22T12:00:02.362Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-10-22T12:00:02.363Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-10-22T12:00:02.363Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-10-22T12:00:02.363Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-10-22T12:00:02.368Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-groundId-1 unregistered
+2024-10-22T12:00:02.368Z  INFO 32676 --- [custom-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : groundId: Consumer stopped
+2024-10-22T12:00:02.382Z  INFO 32676 --- [custom-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T12:00:02.384Z  INFO 32676 --- [custom-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-22T12:00:02.389Z  INFO 32676 --- [custom-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-22T12:00:02.391Z  INFO 32676 --- [custom-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-10-22T12:00:05.406Z  INFO 32676 --- [custom-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-10-22T12:00:05.425Z  INFO 32676 --- [custom-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOM-SERVICE/AMALITECH-PC-10663.mshome.net:custom-service:8090 - deregister  status: 200
+2024-10-22T12:00:05.425Z  INFO 32676 --- [custom-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

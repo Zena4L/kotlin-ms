@@ -1,0 +1,60 @@
+2024-10-22 13:27:41.231 [http-nio-8090-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.gender,
+        c1_0.last_name,
+        c1_0.phone 
+    from
+        customers c1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2024-10-22 13:39:33.328 [http-nio-8090-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.gender,
+        c1_0.last_name,
+        c1_0.phone 
+    from
+        customers c1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2024-10-22 13:41:07.982 [http-nio-8090-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.gender,
+        c1_0.last_name,
+        c1_0.phone 
+    from
+        customers c1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2024-10-22 13:45:13.197 [http-nio-8090-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.gender,
+        c1_0.last_name,
+        c1_0.phone 
+    from
+        customers c1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only

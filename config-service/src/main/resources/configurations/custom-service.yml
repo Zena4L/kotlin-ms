@@ -11,9 +11,18 @@ spring:
       hibernate:
         database-platform: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
-    show-sql: true
+#        use_sql_comments: true
+    show-sql: false
 
+    bootstrap-servers: localhost:9093
 
+logging:
+  file:
+    path: /
+    name: log.txt
+  level:
+    root: info
+    org.hibernate.sql: debug
 
 server:
   port: 8090
